@@ -1,0 +1,105 @@
+@import 'https://fonts.googleapis.com/css?family=Hind+Guntur';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hind Guntur', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  font-family: 'Hind Guntur', sans-serif;
+  color: black;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url("http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg") no-repeat center;
+  background-size: cover;
+  height:100vh;
+  justify-content: space-between;
+  }
+  
+.small-screen-header {
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0px 20px;
+  background: none;
+  color: #fff;
+}
+
+.big-screen-header {
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0px 20px;
+  background: blue;
+  color: #fff;
+}
+
+.main-nav { /*hiding main nav on mobile*/
+  display: none;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.main-nav ul li {
+
+    margin: 0 10px;
+}
+
+
+.ham {
+    width: 40px;
+    height: 25px;
+    padding: 35px 0 0 0;
+}
+
+.logo-container {
+    height: 31px;
+    width: 155px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wot-logo-whitex2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px 0 0 -42px;
+}
+
+.empty-square {
+  display: flex;
+  background-size: contain;
+  background-color: red;
+  width: 100vw;
+  height: 200px
+}
+
+
+@media(min-width: 768px) {
+    /* This will hide the menu when on screens larger than 700px */
+    .ham {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+    .small-screen-header {
+        display: flex;
+    }
+
+}
+
+
+
