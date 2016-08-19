@@ -1,3 +1,4 @@
+
 @import 'https://fonts.googleapis.com/css?family=Hind+Guntur';
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,24 +22,27 @@ body {
   }
   
 .small-screen-header {
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding: 0px 20px;
-  background: none;
-  color: #fff;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: #fff;
+    color: #fff;
 }
 
+
+
 .big-screen-header {
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding: 0px 20px;
-  background: blue;
-  color: #fff;
+    height: 65px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0px 20px; */
+    background: none;
+    color: #fff;
 }
+
 
 .main-nav { /*hiding main nav on mobile*/
   display: none;
@@ -47,7 +51,7 @@ body {
 .main-nav ul {
     display: flex;
     justify-content: space-around;
-    padding: 40px 0 0 0;
+    padding: 40px 0px 0px 0px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -86,7 +90,7 @@ body {
 
 
 @media(min-width: 768px) {
-    /* This will hide the menu when on screens larger than 700px */
+    /* This will hide the .ham menu when on screens larger than 700px */
     .ham {
         display: none;
     }
@@ -97,6 +101,7 @@ body {
 
     .small-screen-header {
         display: flex;
+        background: none;
     }
 
 }
